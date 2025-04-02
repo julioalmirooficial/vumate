@@ -1,0 +1,27 @@
+{
+  "name": "vumate",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "vue3",
+    "nuxt3",
+    "animation",
+    "animations",
+    "vue animations",
+    "nuxt animations",
+    "vue intersection observer",
+    "scroll animations",
+    "vue scroll effects",
+    "vue motion",
+    "vue transitions"
+  ],
+  "author": "Julio Almiro",
+  "license": "MIT",
+  "description": "Librería ligera para agregar animaciones basadas en scroll a Vue 3 y Nuxt 3 usando Intersection Observer."
+}
