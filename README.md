@@ -1,28 +1,28 @@
-# VUMATE - Animaciones con Vue 3 y Nuxt 3 🚀  
+# VUMATE - Animations with Vue 3 and Nuxt 3 🚀  
 
 <p >
   <a href="https://paypal.me/almiror?country.x=PE&locale.x=es_XC" target="_blank">
-    <img src="https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-ffdd00?logo=paypal&style=flat&logoColor=blue&color=0070ba&labelColor=white" 
-         alt="Invítame un café" 
+    <img src="https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-ffdd00?logo=paypal&style=flat&logoColor=blue&color=0070ba&labelColor=white"
+         alt="Buy Me a Coffee"
          style="border-radius: 10px;">
   </a>  
   <br>
-  ⭐ ¡No olvides regalarme una estrellita en mi repo! ⭐
+  ⭐ Don't forget to star this repo! ⭐
 </p>
 
-**VUMATE** es una librería ligera para agregar animaciones basadas en el scroll a proyectos Vue 3 y Nuxt 3 usando **Intersection Observer**.  
+**VUMATE** is a lightweight library for adding scroll-based animations to Vue 3 and Nuxt 3 projects using **Intersection Observer**.  
 
-## 📦 Instalación  
+## 📦 Installation  
 
-Instala la librería con npm:  
+Install the library using npm:  
 
 ```sh
 npm install vumate
 ```
 
-## 🚀 Uso Básico
+## 🚀 Basic Usage
 
-Importa **vumate** en tu componente y define las animaciones:
+Import **vumate** into your component and define animations:
 
 ```js
 <script setup>
@@ -46,39 +46,39 @@ vumate([
 
 <template>
   <div>
-    <h1 class="fade-in">¡Hola, VUMATE!</h1>
-    <p class="slide-left">Este texto se desliza desde la izquierda.</p>
+    <h1 class="fade-in">Hello, VUMATE!</h1>
+    <p class="slide-left">This text slides in from the left.</p>
   </div>
 </template>
 ```
 
-## ✨ Atributos de Animación
+## ✨ Animation Attributes
 
-| Atributo   | Descripción                                                                 | Valor por defecto     |
-|------------|-----------------------------------------------------------------------------|-----------------------|
-| `transform`| Define el tipo de transformación de la animación                             | **`["none", "none"]`** |
-| `opacity`  | Define la opacidad del elemento durante la animación                         | **`["1", "1"]`**       |
-| `duration` | Duración de la animación en segundos                                         | **`0.8`**              |
-| `easing`   | Tipo de easing para la animación                                             | **`"ease-in-out"`**    |
-| `rebounds` | Configuración de los rebotes (cantidad y eje) en la animación                | **`{ reboundCount: 0, axis: "Y" }`** |
+| Attribute   | Description                                                                | Default Value          |
+|------------|----------------------------------------------------------------------------|------------------------|
+| `transform`| Defines the type of animation transformation                              | **`["none", "none"]`** |
+| `opacity`  | Defines the element's opacity during the animation                        | **`["1", "1"]`**       |
+| `duration` | Duration of the animation in seconds                                     | **`0.8`**              |
+| `easing`   | Type of easing for the animation                                        | **`"ease-in-out"`**    |
+| `rebounds` | Bounce configuration (count and axis) for the animation                  | **`{ reboundCount: 0, axis: "Y" }`** |
 
-### Explicación de los Atributos
+### Attribute Explanation
 
-- **`transform:`** Se utiliza para aplicar transformaciones como **scale**, **translate**, entre otras. Si no se pasa, se usa **none** por defecto, lo que significa que no se aplica ninguna transformación.
+- **`transform:`** Used to apply transformations such as **scale**, **translate**, and others. If not provided, **none** is used by default, meaning no transformation is applied.
   
-- **`opacity:`** Controla la visibilidad del elemento. El valor predeterminado es **1**, lo que significa completamente visible.
+- **`opacity:`** Controls the visibility of the element. The default value is **1**, meaning fully visible.
   
-- **`duration:`** Determina cuánto tiempo tomará la animación en completarse. Si no se especifica, se usa **0.8** segundos.
+- **`duration:`** Determines how long the animation takes to complete. If not specified, **0.8** seconds is used.
   
-- **`easing:`** Controla el ritmo de la animación. **ease-in-out** es el valor por defecto, lo que da un efecto suave al principio y al final de la animación.
+- **`easing:`** Controls the animation speed curve. The default **ease-in-out** creates a smooth start and end.
   
-- **`rebounds:`** Permite controlar el comportamiento de rebote durante la animación.  
-  - **`reboundCount`**: Número de rebotes que la animación debe hacer. El valor por defecto es **0**, lo que significa que no habrá rebotes.  
-  - **`axis`**: El eje en el que ocurrirá el rebote. El valor por defecto es **"Y"**, lo que significa que el rebote ocurre a lo largo del eje vertical. También puede establecerse a **"X"** para un rebote horizontal.
+- **`rebounds:`** Controls the bounce behavior of the animation.
+  - **`reboundCount`**: Number of bounces the animation should have. The default is **0**, meaning no bounce.
+  - **`axis`**: The axis on which the bounce occurs. The default is **"Y"**, meaning vertical bounce. It can also be set to **"X"** for a horizontal bounce.
 
-## 🎯 Personalización
+## 🎯 Customization
 
-Puedes ajustar la duración, rebote y el easing en cada animación:
+You can adjust duration, bounce, and easing for each animation:
 
 ```js
 vumate([
@@ -98,27 +98,27 @@ vumate([
 ]);
 ```
 
-## 🎨 Clases Disponibles
+## 🎨 Available Classes
 
-Puedes agregar animaciones a cualquier elemento con las clases definidas:
+You can add animations to any element using predefined classes:
 
 ```html
-<h2 class="fade-in">Soy un título animado</h2>
-<div class="slide-left">Me deslizo desde la izquierda</div>
-<p class="zoom-in">Hago zoom al aparecer</p>
+<h2 class="fade-in">I'm an animated title</h2>
+<div class="slide-left">I slide in from the left</div>
+<p class="zoom-in">I zoom in on appearance</p>
 ```
 
-## 🛠 Requisitos
+## 🛠 Requirements
 
-- Vue 3 o Nuxt 3
-- Soporte para Intersection Observer (compatible con todos los navegadores modernos)
+- Vue 3 or Nuxt 3
+- Intersection Observer support (compatible with all modern browsers)
 
 [VUMATE](https://github.com/julioalmirooficial/vumate)  
 
-## 📍 Contribuciones
+## 📍 Contributions
 
-Si deseas contribuir a **VUMATE**, no dudes en abrir un Pull Request o dejar un Issue en el repositorio.
+If you want to contribute to **VUMATE**, feel free to open a Pull Request or submit an Issue in the repository.
 
-## 📜 Licencia  
+## 📜 License  
 
 MIT © [Julio Almiro](https://github.com/julioalmirooficial/vumate)  
